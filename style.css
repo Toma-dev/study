@@ -1,0 +1,9 @@
+body {
+    background-color: azure;
+}
+.text {
+    color: rgba(14, 97, 168, 0.71);
+    text-align: center;
+    text-indent: 10px;
+    font: Arial;
+}
