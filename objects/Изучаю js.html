@@ -14,7 +14,12 @@
         let user = {
             name: "Toma",
             age: 24,
-            "plays piano": true
+            "plays piano": true,
+            
+            sayHi() {
+            alert("Hello!");
+            },
+            
         };
 //        user.isStudent = true;
 //        delete user["plays piano"];
@@ -37,8 +42,17 @@
 //                }
 //            }
 //        }
-        
-                    
+        //Создание клона объекта user
+//        let clone = Object.assign({}, user);
+//        //Если в свойствах объекта также содержатся объекты, то необходимо использовать глубокое клонирование
+        user.sayName = function() {
+            alert (`My name is ${this.name}`);
+        };
+//        user.sayName();
+        let myName = user.sayName();
+        myName();
+
+                 
     
     
     
