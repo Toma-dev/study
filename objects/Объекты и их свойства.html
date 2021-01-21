@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Изучаю JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="text">
+        <p>Привет, я начала изучать HTML, CSS, JavaScript и PHP 17.01.21. Посмотрим, сколько это займет времени...</p>
+        <li>20.01.21 Изучаю работу с объектами</li>
+    </div>
+    <script>
+    //Работа с объектами (основы)
+        let user = {
+            name: "Toma",
+            age: 24,
+            "plays piano": true,
+            
+            sayHi() {
+            alert("Hello!");
+            },
+            
+        };
+//        user.isStudent = true;
+//        delete user["plays piano"];
+//        let mood = prompt("Какое у нее настроение?");
+//        user.mood = mood;
+//        alert ("mood" in user);
+//        for (let key in user) {
+//            alert( key );
+//            alert( user[key]);
+//        }
+//        let menu = {
+//              width: 200,
+//              height: 300,
+//              title: "My menu"
+//            };
+//        function multiplyNumeric(obj) {
+//            for (let key in obj) {
+//                if (typeof (obj[key]) == "number") {
+//                    obj[key]*=2;
+//                }
+//            }
+//        }
+        //Создание клона объекта user
+//        let clone = Object.assign({}, user);
+//        //Если в свойствах объекта также содержатся объекты, то необходимо использовать глубокое клонирование
+//        user.sayName = function() {
+//            alert (`My name is ${this.name}`);
+//        };
+////        user.sayName();
+//        let myName = user.sayName();
+//        myName();
+        let calculator = {   
+            read() {
+                this.x = +prompt("Enter x");
+                this.y = +prompt("Enter y");
+                
+            },
+                
+            sum() {
+                return this.x + this.y;
+            },
+        
+            mul() {
+                return this.x * this.y;
+            }
+        };
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+    
+    
+    
+    
+    
+    </script> 
+</body>
+</html>

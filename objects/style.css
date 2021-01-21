@@ -7,3 +7,7 @@ body {
     text-indent: 10px;
     font: Arial;
 }
+
+li {
+    text-align: left
+}

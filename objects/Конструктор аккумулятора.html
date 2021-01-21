@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Изучаю JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="text">
+        <p>Привет, я начала изучать HTML, CSS, JavaScript и PHP 17.01.21. Посмотрим, сколько это займет времени...</p>
+    </div>
+    <script>
+    //Работа с объектами (основы)
+        function Calculator () {
+            this.read = function(){
+                this.x = +prompt("Enter x");
+                this.y = +prompt("Enter y");
+            };
+            
+            this.sum = function(){
+                return this.x + this.y;
+            };
+            
+            this.mul = function(){
+                return this.x * this.y;
+            };
+        };
+        
+//        let calculator = new Calculator();
+//        calculator.read();
+//        alert("Summ = " + calculator.sum());
+//        alert("Mult = " + calculator.mul());
+        function Accumulator(stringValue){
+            this.value = stringValue;
+            
+            this.read = function(){
+                this.value += +prompt("Enter i", 0);
+            };
+        }
+        let accumulator = new Accumulator(1);
+        accumulator.read();
+        accumulator.read();
+        alert(accumulator.value);
+        
+    
+    
+    
+    
+    
+    </script> 
+</body>
+</html>
