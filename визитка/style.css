@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main{
     background: rgba(255, 255, 255, 0.65);
-    min-height: 70%;
+    min-height: 80%;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +24,16 @@ body{
     
 }
 
-menu{
+.menu{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    max-height: 10%;
+    
+}
+.about, .portfolio, .contact {
+    display: flex;
+    justify-content: space-between;
     
 }
