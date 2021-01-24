@@ -10,17 +10,23 @@
         <p>Привет, я начала изучать HTML, CSS, JavaScript и PHP 17.01.21. Посмотрим, сколько это займет времени...</p>
         <li>20.01.21 Изучаю работу с объектами</li>
         <li>21.01.21 Изучаю работу с числами, строками</li>
+        <li>22.01.21 Массивы</li>
+        <li>23.01.21 Функции для работы с массивами</li>
     </div>
     <script>
-    //Работа со строками
-//    alert( "\u{1F60D}" );
-//    function ucFirst(str){
-//        if (!str) return str;
-//        str = str[0].toUpperCase() + str.slice(1);
-//        alert(str);
-//    }
-//    ucFirst("toma");
-    
+    //Работа с массивами
+        let str = "";
+        function camelize(str) {
+            return str;
+            .split('-');
+            .map((element, index) => {
+                if (index == 0) return element;
+                else return(element[0].toUpperCase() + element.slice(1));
+            });
+            .join('');
+            }
+        camelize("background-color");
+        alert(str);
     
     
     
