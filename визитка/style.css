@@ -44,15 +44,11 @@ main {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-/*    border-radius: 2%;*/
     display: block;
 }
 
-nav {
+.tabs {
     padding: 0px;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
     justify-content: stretch;
     width: 100%;
     flex-flow: nowrap;
@@ -60,20 +56,12 @@ nav {
     font-size: 12px;
 }
 
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    height: 30px;
-    align-items: center; 
-    cursor: pointer;
-    padding: 10px;
-    
-}
-
-.btn:hover {
+/*
+.tabs:hover {
     background-color: rgba(255, 231, 176, 0.58);
-/*    border-radius: ;*/
+    border-radius: ;
 }
+*/
 
 #photo {
     border-radius: 50%;
@@ -81,19 +69,46 @@ nav {
     margin: 0 20;
 }
 
-.info {
-    padding-top: 10;
-    list-style-position: inside;
-}
-
 .content p, ol {
     font-size: 0.95em;
     padding:5 35;
+    list-style-position: inside;
 }
 
+.tabs {
+    font-size: 0;
+}
 
+.tabs>input[type="radio"] {
+    display: none;
+}
 
+.tabs>div {
+    display: none;
+}
 
+/*Отображение контента вкладок*/
+#about:checked~.content>.about,
+#portfolio:checked~.content>.portfolio,
+#contact:checked~.content>.contact {
+    display: block;
+}
 
+.tabs>label {
+    display: inline-grid;
+    grid-auto-columns: flex;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    line-height: 2;
+}
+
+/*
+.tabs>input[type="radio"]:checked+label {
+    background-color: rgba(255, 231, 176, 0.58);
+}
+*/
 
 

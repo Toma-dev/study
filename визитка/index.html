@@ -8,7 +8,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
     <body>
-        <div id = "test" onclick="$('#test').hide()">Test</div>
         <div class="myself">
             <img src = "images/new_photo.PNG" id=photo alt="Фотография Ширяевой Тамары Анатольевны">
             <div class = "name">
@@ -17,65 +16,48 @@
             </div>
         </div>
         <main>
-            <nav>
-                <div class = "btn" id = "about_btn">
-<!--                    <img src="images/about.png" height="100%">-->
-                    <h2>About</h2>
-                </div>
-                <div class = "btn" id = "portfolio_btn">
-<!--                    <img src="images/portfolio.png" height="100%">-->
-                    <h2>Portfolio</h2>
-                </div> 
-                <div class = "btn" id = "contact_btn">
-<!--                    <img src="images/contact.png" height="90%">-->
-                    <h2>Contact</h2>
-                </div>
-            </nav>
+            <div class = "tabs">
+                <input type="radio" name="tab_btn" id = "about" value="" checked>
+                <label for="about">About</label>
+                
+                <input type="radio" name="tab_btn" id = "portfolio" value="">
+                <label for="portfolio">Portfolio</label>
+                
+                <input type="radio" name="tab_btn" id = "contact" value="">
+                <label for="contact">Contact</label>   
             
-            <script>
-                $(".info").show();
-                $(".portfolio").hide();
-                $(".contact").hide();
-//                $(document).ready(function(){
-//                    $(".btn").click(function () {
-//                       switch(this.id)
-//                           case "about_btn": $
-//                    });
-//                });
-
-            </script>
-            
-            <div class = "content">
-                <div class = "info">
-                <h4>Цель</h4>
-                <p>Выпускник высшей школы электроники и компьютерных наук ищет работу в сфере автоматики, управления технологическими процессами или IT.</p><h4>Обазование</h4>
-                <p>Бакалавриат, магистратура
-                Южно-Уральский Государственный Университет (ЮУрГУ) <br />
-                Высшая школа электроники и компьютерных наук (Приборостроительный)<br />
-                Кафедра: Автоматика и управление<br />
-                Специальность: Управление в технических системах (270304)
-                </p>
-                <h4>Успеваемость</h4>
-                <p>Средний балл успеваемости по дисциплинам:<br />
-                Бакалавриат – 4,3;<br />
-                Магистратура – 5,0.
-                </p>
-                <h4>Навыки</h4>
-                <ol>	
-                    <li>Знание языков программирования С, С++, JavaScript на начальном уровне, уверенное знание SQL.</li>
-                    <li>Уровень владения Mathcad, Matlab, MS Office (Excel, Word, Power Point), VisSim, Simulink – продвинутый пользователь, DeltaV – начальный уровень.</li>
-                    <li>Начинающий Python разработчик: ВКР посвящена оценке эффективности работы оборудования методами интеллектуального анализа данных (кластерный анализ данных, классификация данных) с применением библиотек numpy, pandas, scikit-learn, matplotlib.</li>
-                    <li>Уровень владения английским языком – продвинутый.</li>
-                </ol>
-                <h4>Личные качества</h4>
-                <p>Считаю себя ответственной, порядочной, исполнительной, успешно работаю как индивидуально, так и в команде. Готова учиться и применять полученные знания на практике.</p>
-                <h4>Опыт трудовой деятельности</h4>
-                <p>Без опыта работы</p>
-                <h4>Достижения в учебе</h4>
-                <p>Участие в международной научно-технической конференции 2020 International Conference on Industrial Engineering, Applications and Manufacturing (ICIEAM) с дальнейшей публикацией статьи <a href="https://ieeexplore.ieee.org/abstract/document/9111984">в сборнике</a>.</p>
+                <div class = "content">
+                    <div class = "about">
+                    <h4>Цель</h4>
+                    <p>Выпускник высшей школы электроники и компьютерных наук ищет работу в сфере IT, автоматики или управления технологическими процессами.</p><h4>Обазование</h4>
+                    <p>Бакалавриат, магистратура
+                    Южно-Уральский Государственный Университет (ЮУрГУ) <br />
+                    Высшая школа электроники и компьютерных наук (Приборостроительный)<br />
+                    Кафедра: Автоматика и управление<br />
+                    Специальность: Управление в технических системах (270304)
+                    </p>
+                    <h4>Успеваемость</h4>
+                    <p>Средний балл успеваемости по дисциплинам:<br />
+                    Бакалавриат – 4,3;<br />
+                    Магистратура – 5,0.
+                    </p>
+                    <h4>Навыки</h4>
+                    <ol>	
+                        <li>Знание языков программирования С, С++, JavaScript на начальном уровне, уверенное знание SQL.</li>
+                        <li>Уровень владения Mathcad, Matlab, MS Office (Excel, Word, Power Point), VisSim, Simulink – продвинутый пользователь, DeltaV – начальный уровень.</li>
+                        <li>Начинающий Python разработчик: ВКР посвящена оценке эффективности работы оборудования методами интеллектуального анализа данных (кластерный анализ данных, классификация данных) с применением библиотек numpy, pandas, scikit-learn, matplotlib.</li>
+                        <li>Уровень владения английским языком – продвинутый.</li>
+                    </ol>
+                    <h4>Личные качества</h4>
+                    <p>Считаю себя ответственной, порядочной, исполнительной, успешно работаю как индивидуально, так и в команде. Готова учиться и применять полученные знания на практике.</p>
+                    <h4>Опыт трудовой деятельности</h4>
+                    <p>Без опыта работы</p>
+                    <h4>Достижения в учебе</h4>
+                    <p>Участие в международной научно-технической конференции 2020 International Conference on Industrial Engineering, Applications and Manufacturing (ICIEAM) с дальнейшей публикацией статьи <a href="https://ieeexplore.ieee.org/abstract/document/9111984">в сборнике</a>.</p>
+                    </div>
+                    <div class = "portfolio"> <p>Бим</p></div>
+                    <div class = "contact"><p>Бам</p></div>
                 </div>
-                <div class = "portfolio"></div>
-                <div class = "contact"></div>
             </div>
         </main>
     </body>
