@@ -1,15 +1,26 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    text-indent: 0px;
 }
 
+h3 {
+    font-size: 1.1em;
+}
 
+h4 {
+    margin-left: 20;
+}
+
+p {
+    font-size: 0.95em;
+}
 
 body {
     min-height: 100%;
-    background: linear-gradient(to right, #ff9d86, rgb(255, 255, 242));
+    background: linear-gradient(to right, #dedede, rgb(255, 252, 242));
     display: block;
     
 }
@@ -18,46 +29,71 @@ body {
     display: inline-flex;
     width: 450px;
     padding: 10px;
-    margin-left: 5%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin: 1% 5% 1% 5%;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
+}
+.myself p {
+    font-size: 1em;
 }
 
 main {
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.06);
     width: 90%;
-    height: 70%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    border-radius: 2%;
-    display: flex;
+/*    border-radius: 2%;*/
+    display: block;
 }
 
-.navigation {
-    display: inline-flex;
-    justify-content: space-evenly;
-    max-height: 100px;
-    flex-flow: row wrap;
+nav {
+    padding: 0px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-content: stretch;
+    width: 100%;
+    flex-flow: nowrap;
     flex: 1;
     font-size: 12px;
-
 }
-.about_btn, .portfolio_btn, .contact_btn {
+
+.btn {
     display: inline-flex;
+    justify-content: center;
+    height: 30px;
     align-items: center; 
     cursor: pointer;
+    padding: 10px;
     
 }
-.about_btn:hover, .portfolio_btn:hover, .contact_btn:hover {
-    background-color: rgb(255, 157, 134);
-    border-radius: 2%;
+
+.btn:hover {
+    background-color: rgba(255, 231, 176, 0.58);
+/*    border-radius: ;*/
 }
 
 #photo {
     border-radius: 50%;
-    max-height: 130px;
+    max-height: 120px;
+    margin: 0 20;
 }
+
+.info {
+    padding-top: 10;
+    list-style-position: inside;
+}
+
+.content p, ol {
+    font-size: 0.95em;
+    padding:5 35;
+}
+
+
+
+
+
+
+
