@@ -1,48 +1,53 @@
-<!DOOCTYPE html>
+﻿<!DOOCTYPE html>
 <html>
     <head>
         <title>Сайт-визитка</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
     <body>
+        <script src="tabs.js"></script>
         <div class="myself">
-            <img src = "images/new_photo.PNG" id=photo alt="Фотография Ширяевой Тамары Анатольевны">
-            <div class = "name">
+            <img src="images/new_photo.PNG" id=photo alt="Фотография Ширяевой Тамары Анатольевны">
+            <div class="name">
                 <h3>Ширяева Т.А.</h3>
                 <p>Начинающий разработчик</p>
             </div>
         </div>
-        <main>
-            <div class = "tabs">
-                <input type="radio" name="tab_btn" id = "about" value="" checked>
-                <label for="about">About</label>
-                
-                <input type="radio" name="tab_btn" id = "portfolio" value="">
-                <label for="portfolio">Portfolio</label>
-                
-                <input type="radio" name="tab_btn" id = "contact" value="">
-                <label for="contact">Contact</label>   
-            
-                <div class = "content">
-                    <div class = "about">
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="active">
+                    <i class="fa fa-list-alt"></i> About
+                </div>
+                <div>
+                    <i class="fa fa-briefcase"></i> Portfolio
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i> Contact
+                </div>
+            </div>
+            <div class="tab-body">
+                <div class="active">
                     <h4>Цель</h4>
                     <p>Выпускник высшей школы электроники и компьютерных наук ищет работу в сфере IT, автоматики или управления технологическими процессами.</p><h4>Обазование</h4>
-                    <p>Бакалавриат, магистратура
-                    Южно-Уральский Государственный Университет (ЮУрГУ) <br />
-                    Высшая школа электроники и компьютерных наук (Приборостроительный)<br />
-                    Кафедра: Автоматика и управление<br />
-                    Специальность: Управление в технических системах (270304)
+                    <p>
+                        Бакалавриат, магистратура
+                        Южно-Уральский Государственный Университет (ЮУрГУ) <br />
+                        Высшая школа электроники и компьютерных наук (Приборостроительный)<br />
+                        Кафедра: Автоматика и управление<br />
+                        Специальность: Управление в технических системах (270304)
                     </p>
                     <h4>Успеваемость</h4>
-                    <p>Средний балл успеваемости по дисциплинам:<br />
-                    Бакалавриат – 4,3;<br />
-                    Магистратура – 5,0.
+                    <p>
+                        Средний балл успеваемости по дисциплинам:<br />
+                        Бакалавриат – 4,3;<br />
+                        Магистратура – 5,0.
                     </p>
                     <h4>Навыки</h4>
-                    <ol>	
+                    <ol>
                         <li>Знание языков программирования С, С++, JavaScript на начальном уровне, уверенное знание SQL.</li>
                         <li>Уровень владения Mathcad, Matlab, MS Office (Excel, Word, Power Point), VisSim, Simulink – продвинутый пользователь, DeltaV – начальный уровень.</li>
                         <li>Начинающий Python разработчик: ВКР посвящена оценке эффективности работы оборудования методами интеллектуального анализа данных (кластерный анализ данных, классификация данных) с применением библиотек numpy, pandas, scikit-learn, matplotlib.</li>
@@ -54,11 +59,10 @@
                     <p>Без опыта работы</p>
                     <h4>Достижения в учебе</h4>
                     <p>Участие в международной научно-технической конференции 2020 International Conference on Industrial Engineering, Applications and Manufacturing (ICIEAM) с дальнейшей публикацией статьи <a href="https://ieeexplore.ieee.org/abstract/document/9111984">в сборнике</a>.</p>
-                    </div>
-                    <div class = "portfolio"> <p>Бим</p></div>
-                    <div class = "contact"><p>Бам</p></div>
                 </div>
+                <div><p>Бим</p></div>
+                <div><p>Бам</p></div>
             </div>
-        </main>
+        </div>
     </body>
 </html>
